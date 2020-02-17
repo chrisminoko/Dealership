@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Dealership.Model
 {
-    public class Milleage
+    public class PercentageIncrease
     {
         public int Upper { get; set; }
         public int Lower { get; set; }
         public decimal PercentageCharged { get; set; }
 
-        public Milleage() { }
+        public PercentageIncrease() { }
 
-        public Milleage(int upper, int lower,decimal percentagecharge)
+        public PercentageIncrease(int upper, int lower,decimal percentagecharge,)
         {
             Upper = upper;
             Lower = lower;
