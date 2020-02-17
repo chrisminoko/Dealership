@@ -12,7 +12,7 @@ namespace Dealership.Logic
 
         public VehicleLogic()
         {
-            //MilleagePercentageIncrease = new PercentageIncrease(100000,150000,0.15);
+            MilleagePercentageIncrease = new PercentageIncrease(100000,150000,0.15);
         }
 
         public VehicleLogic(Vehicle vehicle)

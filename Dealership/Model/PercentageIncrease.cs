@@ -8,11 +8,11 @@ namespace Dealership.Model
     {
         public int Upper { get; set; }
         public int Lower { get; set; }
-        public decimal PercentageCharged { get; set; }
+        public double PercentageCharged { get; set; }
 
         public PercentageIncrease() { }
 
-        public PercentageIncrease(int upper, int lower,decimal percentagecharge,)
+        public PercentageIncrease(int upper, int lower,double percentagecharge)
         {
             Upper = upper;
             Lower = lower;
