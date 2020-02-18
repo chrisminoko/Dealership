@@ -23,11 +23,13 @@ namespace Dealership.Logic
                 new VehicleModel(4,"VW",Model.VehicleType.Car,1,"Pollo6")
             };
 
-           distinct= VehicleModels.Distinct().ToList();
+            
+          
 
         }
         public void DisplaySelections()
         {
+            var q = VehicleModels.GroupBy(x => x.VehicleName).Select(y => y.FirstOrDefault());
             Console.WriteLine("***Welcome to We buy Cars *** \n\n");
             Console.WriteLine("Types of Vehicles Availabe\n");
 
@@ -42,7 +44,7 @@ namespace Dealership.Logic
             Console.WriteLine("\n");
 
             
-            foreach (var vehicleType in distinct) 
+            foreach (var vehicleType in q) 
             {
                 if (VehicleTypePosition == vehicleType.VehicleType_postion)
                 {
