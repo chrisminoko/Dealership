@@ -9,7 +9,7 @@ namespace Dealership.Logic
    public class ModelLogic
     {
      public List<VehicleModel> VehicleModels { get; set; }
-     public List<VehicleModel> distinct { get; set; }
+   
         int i = 0;
         public ModelLogic()
         {
@@ -23,13 +23,10 @@ namespace Dealership.Logic
                 new VehicleModel(4,"VW",Model.VehicleType.Car,1,"Pollo6")
             };
 
-            
-          
-
         }
         public void DisplaySelections()
         {
-            var q = VehicleModels.GroupBy(x => x.VehicleName).Select(y => y.FirstOrDefault());
+            var vehicleModels = VehicleModels.GroupBy(x => x.VehicleName).Select(y => y.FirstOrDefault());
             Console.WriteLine("***Welcome to We buy Cars *** \n\n");
             Console.WriteLine("Types of Vehicles Availabe\n");
 
@@ -43,8 +40,7 @@ namespace Dealership.Logic
             int VehicleTypePosition = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
 
-            
-            foreach (var vehicleType in q) 
+            foreach (var vehicleType in vehicleModels) 
             {
                 if (VehicleTypePosition == vehicleType.VehicleType_postion)
                 {
