@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dealership.Logic;
+using Dealership.Model;
+using System;
 
 namespace Dealership
 {
@@ -6,7 +8,13 @@ namespace Dealership
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var m = new ModelLogic();
+            m.DisplaySelections();
+            Console.ReadKey();
+
+            //var vehicle = new VehicleLogic();
+            //vehicle.BuyVehicle();
+            //Console.ReadKey();
         }
     }
 }
