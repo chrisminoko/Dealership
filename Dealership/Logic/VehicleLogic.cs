@@ -13,6 +13,9 @@ namespace Dealership.Logic
             Console.WriteLine("******** Welcome to We buy Cars **********\n\n");
             Console.WriteLine("******** General Car Information **********\n\n");
             var _vehicle= new Vehicle();
+            Console.WriteLine("Please Enter your Base price of the vehicle\n");
+            _vehicle.BookValue = int.Parse(Console.ReadLine());
+
             Console.WriteLine("Please Enter your mileage\n");
             _vehicle.Millege = int.Parse(Console.ReadLine()) ;
             Console.WriteLine("\n");

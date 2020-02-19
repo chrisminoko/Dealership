@@ -35,6 +35,7 @@ namespace Dealership.Model
         Truck=2,
         Bus=3
     }
+
     public class Vehicle
     {
         public int  Millege { get; set; }
