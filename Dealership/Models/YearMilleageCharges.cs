@@ -10,9 +10,7 @@ namespace Dealership.Model
         public int Lower { get; set; }
         public float Charges { get; set; }
         public float? ExtraPecentages { get; set; }
-
         public YearMilleageCharges() { }
-
         public YearMilleageCharges(int upper, int lower, float charge,float extrapercentage)
         {
             Upper = upper;
@@ -20,7 +18,5 @@ namespace Dealership.Model
             Charges = charge;
             ExtraPecentages = extrapercentage;
         }
-
-
     }
 }

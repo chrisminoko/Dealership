@@ -9,7 +9,6 @@ namespace Dealership.Logic
     {
         public  List<YearMilleageCharges> MilleagePriceIncrease;
         public  List<YearMilleageCharges> YearPercentageIncrease;
-
         public YearMilleageChargesLogic()
         {
             MilleagePriceIncrease = new List<YearMilleageCharges>()

@@ -9,11 +9,8 @@ namespace Dealership.Models
     {
         public int ModelID { get; set; }
         public string Model { get; set; }
-
         public VehicleType VehicleType { get; set; }
-
         public int VehicleType_postion { get; set; }
-
         public VehicleModel(int vehicleid, string vehiclename, VehicleType vehicleType, int modelid, string model) : base(vehicleid, vehiclename)
         {
             ModelID = modelid;
@@ -25,11 +22,9 @@ namespace Dealership.Models
         {
             Console.Write(VehicleName + " " + VehicleType + " " + " " + Model + "\n\n");
         }
-
         public void Name ()
         {
             Console.Write(VehicleName + " " + "\n");
         }
-
     }
 }

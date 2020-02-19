@@ -9,7 +9,6 @@ namespace Dealership.Logic
    public class ModelLogic
     {
      public List<VehicleModel> VehicleModels { get; set; }
-   
         int i = 0;
         public ModelLogic()
         {
@@ -22,7 +21,6 @@ namespace Dealership.Logic
                 new VehicleModel(3,"Toyata",Model.VehicleType.Truck,3,"RoadRave3"),
                 new VehicleModel(4,"VW",Model.VehicleType.Car,1,"Pollo6")
             };
-
         }
         public void DisplaySelections()
         {
@@ -34,34 +32,29 @@ namespace Dealership.Logic
             {
                 i++;
                 Console.WriteLine(vehicleType + " "+i);
-              
             }
-            Console.WriteLine("Please select what would you want to see\n");
+            Console.WriteLine("\n");
+            Console.WriteLine("Please select the category you looking for \n");
             int VehicleTypePosition = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
-
             foreach (var vehicleType in vehicleModels) 
             {
                 if (VehicleTypePosition == vehicleType.VehicleType_postion)
                 {
                     vehicleType.Name();
                 }
-               
             }
-            Console.WriteLine("Please select the one you want ");
-
+            Console.WriteLine("\n");
+            Console.WriteLine("Please select the one you want\n ");
             string name = Console.ReadLine();
+            Console.WriteLine("\n");
             foreach (var vehicleType in VehicleModels) 
             {
-
                 if (name == vehicleType.VehicleName)
                 {
                     vehicleType.Display();
-
                 }
-
             }
-
         }
     }
 }

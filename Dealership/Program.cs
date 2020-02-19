@@ -8,13 +8,13 @@ namespace Dealership
     {
         static void Main(string[] args)
         {
-            var m = new ModelLogic();
-            m.DisplaySelections();
-            Console.ReadKey();
-
-            //var vehicle = new VehicleLogic();
-            //vehicle.BuyVehicle();
+            //var m = new ModelLogic();
+            //m.DisplaySelections();
             //Console.ReadKey();
+
+            var vehicle = new VehicleLogic();
+            vehicle.BuyVehicle();
+            Console.ReadKey();
         }
     }
 }

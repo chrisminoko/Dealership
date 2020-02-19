@@ -41,12 +41,10 @@ namespace Dealership.Model
         public decimal BookValue { get; set; }
         public ServiceHistory ServiceHistory { get; set; }
         public VehicleType VehicleType { get; set; }
-
         public ExtraServicHistoryCharges ExtraServicHistoryCharges { get; set; }
         public Spec Spec { get; set; }
         public Color Color { get; set; }
         public int Year { get; set; }
-
         public Vehicle()
         {
 
@@ -62,5 +60,4 @@ namespace Dealership.Model
             VehicleType = vehicleType;
         }
     }
-
 }
